@@ -4,9 +4,20 @@
   background: #2b2c2e;
   color: color-contrast(#2b2c2e);
 
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      align-items: center;
+    }
+  }
 
   &-h1 {
     font-size: 2.5rem;
+    font-family: "Fredoka One";
   }
 
   &-h2 {
@@ -17,11 +28,12 @@
   }
 
   &-logo {
+    width: 100%;
     border-radius: 50%;
+    max-width: 280px;
 
-    @include media-breakpoint-down(xs)
-    {
-      max-width: 280px;
+    @include media-breakpoint-down(md) {
+      max-width: 220px;
     }
   }
 }
