@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad4e4f79.css",
-    "main.js": "/static/js/main.b75168f2.js",
+    "main.css": "/static/css/main.1e327e56.css",
+    "main.js": "/static/js/main.8df21e96.js",
     "static/js/787.45b1e751.chunk.js": "/static/js/787.45b1e751.chunk.js",
     "static/media/Duepuntozero-Regular-Trial.ttf": "/static/media/Duepuntozero-Regular-Trial.e83d4100944188549f98.ttf",
-    "static/media/logo.png": "/static/media/logo.db83968cfc00f33161bf.png",
     "service-worker.js": "/service-worker.js",
+    "static/media/FredokaOne-Regular.ttf": "/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
+    "static/media/logo.svg": "/static/media/logo.e17d74b4446a16601baa62c368023de2.svg",
     "index.html": "/index.html",
-    "main.ad4e4f79.css.map": "/static/css/main.ad4e4f79.css.map",
-    "main.b75168f2.js.map": "/static/js/main.b75168f2.js.map",
+    "main.1e327e56.css.map": "/static/css/main.1e327e56.css.map",
+    "main.8df21e96.js.map": "/static/js/main.8df21e96.js.map",
     "787.45b1e751.chunk.js.map": "/static/js/787.45b1e751.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad4e4f79.css",
-    "static/js/main.b75168f2.js"
+    "static/css/main.1e327e56.css",
+    "static/js/main.8df21e96.js"
   ]
 }
