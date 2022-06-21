@@ -1,6 +1,7 @@
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
+import SkillsBox from "../SkillsBox";
 import "./index.scss";
 
 const Hero = () => {
@@ -16,10 +17,11 @@ const Hero = () => {
               <h1 className="hero-h1">
                 Hi, I'm <span>Sadiq Salau</span>
               </h1>
-              <h2 className="hero-h2 fst-italic">A Web Developer</h2>
-              <p className="fst-italic">
+              <h2 className="hero-h2 fst-italic">Web Developer</h2>
+              <p className="fst-italic mb-2">
                 I develop websites and web applications
               </p>
+              <SkillsBox className="mb-2" />
               <Button as={Link} to="#contact">
                 Contact Me
               </Button>
