@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/fredoka-one": "^5.2.5",
+    "@fontsource/quicksand": "^5.2.8",
     "@tailwindcss/vite": "^4.1.11",
     "clsx": "^2.1.1",
     "react": "^19.1.0",
