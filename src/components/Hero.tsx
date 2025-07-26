@@ -1,4 +1,4 @@
-import { LucideMouse } from "lucide-react";
+import { LucideMouse, LucideSparkles } from "lucide-react";
 
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
 import { cn } from "../lib/utils";
@@ -36,9 +36,10 @@ export default function Hero() {
 
             {/* Description */}
             <p className="max-md:text-center">
-              Self-taught full-stack developer focused on building fast,
-              offline-first apps using React, Laravel, Node.js (Fastify), and
-              modern web tools.
+              Building fast, offline-first apps with React, Laravel, and Node.js
+              — now enhanced with{" "}
+              <LucideSparkles className="inline-flex size-4" /> AI tools like
+              Copilot, Bolt, and Lovable.
             </p>
 
             {/* CTA Button */}
