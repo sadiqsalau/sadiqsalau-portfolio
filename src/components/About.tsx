@@ -3,7 +3,7 @@ import { LucideSparkles } from "lucide-react";
 export default function About() {
   return (
     <section className="mx-auto max-w-7xl py-12 px-4 flex flex-col gap-4">
-      <h1 className="text-4xl font-thin text-green-500">About Me</h1>
+      <h1 className="text-4xl font-light text-green-500">About Me</h1>
       <p>
         I'm a self-taught full-stack web developer based in 🇳🇬 Nigeria with
         several years of experience building fast, offline-first web
