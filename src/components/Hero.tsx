@@ -5,7 +5,7 @@ import { cn } from "../lib/utils";
 
 export default function Hero() {
   return (
-    <div className="min-h-dvh flex flex-col gap-4 py-12 px-4">
+    <div className="min-h-dvh flex flex-col gap-4 py-12 px-4 bg-stone-800">
       <div className="flex items-center grow mx-auto max-w-7xl">
         <div
           className={cn(
