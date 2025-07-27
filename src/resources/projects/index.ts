@@ -61,7 +61,7 @@ const previewImages = mapProjectImages(
       as: "metadata",
       format: "webp",
       withoutEnlargement: "",
-      w: 350,
+      w: 700,
     },
   })
 );
