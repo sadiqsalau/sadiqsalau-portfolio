@@ -6,7 +6,7 @@ import { cn } from "../lib/utils";
 type SectionProps = React.HTMLAttributes<HTMLElement> & {
   title: string;
   children: React.ReactNode;
-  className: ClassValue;
+  className?: ClassValue;
 };
 
 export default function Section({ title, children, ...props }: SectionProps) {
