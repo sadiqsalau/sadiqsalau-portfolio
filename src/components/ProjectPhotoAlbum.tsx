@@ -20,6 +20,7 @@ export const ProjectPhotoAlbum = ({
     photos={photos}
     spacing={5}
     padding={0}
+    breakpoints={[300, 600, 1200]}
     render={{
       wrapper: ({ children, ...props }, { index }) => (
         <div {...props} className="relative overflow-hidden">
