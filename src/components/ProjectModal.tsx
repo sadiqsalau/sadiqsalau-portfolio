@@ -24,8 +24,6 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
   const currentImageIndex = location.state?.image ?? -1;
   const showLightbox = currentImageIndex >= 0;
 
-  console.log(currentImageIndex);
-
   const openLightbox: ClickHandler<Photo> = ({ index }) => {
     navigate(location, {
       replace: false,
@@ -53,8 +51,11 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
         ) : null}
 
         {/* Photos */}
-        {project.images?.length ? (
-          <ProjectPhotoAlbum photos={project.images} onClick={openLightbox} />
+        {project.previewImages?.length ? (
+          <ProjectPhotoAlbum
+            photos={project.previewImages}
+            onClick={openLightbox}
+          />
         ) : null}
 
         {/* Lightbox */}
