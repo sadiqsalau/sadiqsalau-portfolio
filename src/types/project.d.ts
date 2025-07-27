@@ -1,18 +1,18 @@
-interface Photo {
+export interface ProjectImage {
   src: string;
   width: number;
   height: number;
 }
 
 export interface Project {
-  id: string;
+  id?: string;
   title: string;
   link: string;
   description: string;
   fullDescription?: string;
   repo?: string;
-  icon: string;
+  icon?: string;
   tags: string[];
-  images: Photo[];
-  previewImages?: Photo[];
+  images: ProjectImage[];
+  previewImages?: ProjectImage[];
 }

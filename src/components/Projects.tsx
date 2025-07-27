@@ -22,11 +22,11 @@ export default function Projects() {
 
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="flex -ml-2 w-auto"
-        columnClassName="pl-2 bg-clip-padding"
+        className="flex -ml-4 w-auto"
+        columnClassName="pl-4 bg-clip-padding"
       >
         {projects.map((project) => (
-          <div key={project.id} className="mb-2">
+          <div key={project.id} className="mb-4">
             <ProjectCard project={project} />
           </div>
         ))}

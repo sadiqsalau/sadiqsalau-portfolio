@@ -38,7 +38,14 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
 
         {/* Full Description */}
         {project.fullDescription ? (
-          <p className={cn("p-4 rounded-md", "bg-stone-800")}>
+          <p
+            className={cn(
+              "border border-green-500",
+              "p-4 rounded-xl",
+              "bg-stone-800",
+              "whitespace-pre-line"
+            )}
+          >
             {project.fullDescription}
           </p>
         ) : null}
@@ -50,19 +57,19 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
             onClick={openLightbox}
           />
         ) : null}
-      </ProjectModalContainer>
 
-      {/* Lightbox */}
-      <Lightbox
-        open={showLightbox}
-        index={currentImageIndex}
-        close={() => navigateBack()}
-        slides={project.images}
-        plugins={[Zoom]}
-        animation={{
-          fade: 0,
-        }}
-      />
+        {/* Lightbox */}
+        <Lightbox
+          open={showLightbox}
+          index={currentImageIndex}
+          close={() => navigateBack()}
+          slides={project.images}
+          plugins={[Zoom]}
+          animation={{
+            fade: 0,
+          }}
+        />
+      </ProjectModalContainer>
     </>
   );
 }

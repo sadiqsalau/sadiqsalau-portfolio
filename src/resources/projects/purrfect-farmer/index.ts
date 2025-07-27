@@ -1,9 +1,6 @@
-import icon from "./icon.png?w=80&h=80&format=webp";
 import type { Project } from "../../../types/project";
 
 export default {
-  icon,
-  id: "purrfect-farmer",
   title: "Purrfect Farmer",
   link: "https://purrfectfarmer.com",
   repo: "https://github.com/purrfect-farmer/purrfect-farmer",
@@ -17,27 +14,5 @@ export default {
   description:
     "Advanced Telegram Mini App automation with seamless multi-account farming.",
   fullDescription:
-    "Purrfect Farmer is a Chrome extension that automates interactions with Telegram Mini Apps directly in the browser. Built for users who manage multiple farming accounts, it runs seamlessly in parallel tabs without requiring constant attention. Designed for speed and stability, it's ideal for automating repetitive tasks across multiple bots with minimal setup.",
-  images: Object.values(
-    import.meta.glob("./screenshots/*", {
-      eager: true,
-      import: "default",
-      query: {
-        as: "metadata",
-        format: "webp",
-      },
-    })
-  ),
-  previewImages: Object.values(
-    import.meta.glob("./screenshots/*", {
-      eager: true,
-      import: "default",
-      query: {
-        as: "metadata",
-        format: "webp",
-        withoutEnlargement: "",
-        w: 350,
-      },
-    })
-  ),
+    "Purrfect Farmer is a Chrome extension that automates interactions with Telegram Mini Apps directly in the browser.\n\nI built this tool to efficiently manage multiple Telegram farming accounts simultaneously, allowing seamless automation across tabs with minimal user input.\n\nDesigned for stability and high performance, it’s ideal for users who need to operate several bots in parallel without constant oversight.",
 } as Project;
