@@ -14,9 +14,9 @@ export default function Projects() {
   return (
     <Section id="projects" title="Projects">
       <p className="text-stone-300">
-        A selection of my recent work — from handcrafted apps to AI-assisted
-        builds. Whether I'm writing code or prompting tools like Bolt or Lovable
-        to generate tailored sites, I focus on performance, UX, and offline
+        A selection of my favorite builds — from handcrafted apps to AI-assisted
+        creations. Whether I’m writing code from scratch or prompting tools like
+        Bolt or Lovable, I focus on performance, UX, and offline-first
         readiness.
       </p>
 
