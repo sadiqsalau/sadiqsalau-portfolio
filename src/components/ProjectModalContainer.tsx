@@ -15,7 +15,7 @@ export default function ProjectModalContainer(props: DialogProps) {
         <DialogPanel
           transition
           className={cn(
-            "w-full max-w-3xl rounded-2xl bg-stone-900 p-6",
+            "w-full max-w-6xl rounded-2xl bg-stone-900 p-6",
             "flex flex-col gap-4",
             "transition duration-300 ease-out data-closed:scale-95"
           )}
