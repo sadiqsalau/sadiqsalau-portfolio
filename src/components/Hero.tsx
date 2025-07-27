@@ -1,4 +1,4 @@
-import { LucideMouse, LucideSparkles } from "lucide-react";
+import { LuMouse, LuSparkles } from "react-icons/lu";
 
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
 import { cn } from "../lib/utils";
@@ -37,9 +37,8 @@ export default function Hero() {
             {/* Description */}
             <p className="max-md:text-center">
               Building fast, offline-first apps with React, Laravel, and Node.js
-              — now enhanced with{" "}
-              <LucideSparkles className="inline-flex size-4" /> AI tools like
-              Copilot, Bolt, and Lovable.
+              — now enhanced with <LuSparkles className="inline-flex size-4" />{" "}
+              AI tools like Copilot, Bolt, and Lovable.
             </p>
 
             {/* CTA Button */}
@@ -57,7 +56,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center">
-        <LucideMouse className="animate-bounce size-10" strokeWidth="1" />
+        <LuMouse className="animate-bounce size-10" strokeWidth="1" />
       </div>
     </div>
   );

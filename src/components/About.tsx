@@ -1,4 +1,4 @@
-import { LucideSparkles } from "lucide-react";
+import { LuSparkles } from "react-icons/lu";
 
 import Section from "./Section";
 
@@ -16,7 +16,7 @@ export default function About() {
         Though I don't have a formal degree, I've relentlessly studied, read
         dozens of technical books, and built real-world projects from scratch.
         While most of my projects were built manually, I now also leverage{" "}
-        <LucideSparkles className="inline-flex size-4" /> AI tools like GitHub
+        <LuSparkles className="inline-flex size-4" /> AI tools like GitHub
         Copilot for code and Bolt/Lovable for no-code workflows — helping me
         move faster without compromising quality.
       </p>
