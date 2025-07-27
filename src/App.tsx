@@ -1,12 +1,11 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
+import { Route, Routes } from "react-router";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <About />
-    </>
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
   );
 }
 
