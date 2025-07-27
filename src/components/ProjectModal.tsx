@@ -4,6 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import type { ClickHandler, Photo } from "react-photo-album";
 import type { DialogProps } from "@headlessui/react";
+import { ErrorBoundary } from "react-error-boundary";
 import { useLocation, useNavigate } from "react-router";
 
 import ProjectModalContainer from "./ProjectModalContainer";
@@ -51,12 +52,16 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
         ) : null}
 
         {/* Photos */}
-        {project.previewImages?.length ? (
-          <ProjectPhotoAlbum
-            photos={project.previewImages}
-            onClick={openLightbox}
-          />
-        ) : null}
+        <ErrorBoundary
+          fallback={<div className="text-red-500">Error loading photos</div>}
+        >
+          {project.previewImages?.length ? (
+            <ProjectPhotoAlbum
+              photos={project.previewImages}
+              onClick={openLightbox}
+            />
+          ) : null}
+        </ErrorBoundary>
 
         {/* Lightbox */}
         <Lightbox
