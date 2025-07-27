@@ -1,9 +1,10 @@
 import { LucideSparkles } from "lucide-react";
 
+import Section from "./Section";
+
 export default function About() {
   return (
-    <section className="mx-auto max-w-7xl py-12 px-4 flex flex-col gap-4">
-      <h1 className="text-4xl font-light text-green-500">About Me</h1>
+    <Section title="About Me">
       <p>
         I'm a self-taught full-stack web developer based in 🇳🇬 Nigeria with
         several years of experience building fast, offline-first web
@@ -25,6 +26,6 @@ export default function About() {
         I aim to deliver reliable, maintainable solutions that just work — even
         offline.
       </p>
-    </section>
+    </Section>
   );
 }
