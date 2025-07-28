@@ -1,4 +1,5 @@
 import AboutProfilePicture from "../assets/images/about-profile-picture.jpg?w=1000&format=webp";
+import HyperLink from "./HyperLink";
 import Section from "./Section";
 
 export default function About() {
@@ -8,8 +9,15 @@ export default function About() {
         <div className="flex flex-col gap-4">
           <p>
             I'm a self-taught Software Engineer based in 🇳🇬 Nigeria with several
-            years of experience building software applications. I care deeply
-            about performance, accessibility, and clean code.
+            years of experience building software applications. I am the Creator
+            of{" "}
+            <HyperLink target="_blank" href="https://purrfectfarmer.com">
+              Purrfect Farmer
+            </HyperLink>{" "}
+            and{" "}
+            <HyperLink target="_blank" href="https://pwabucket.com">
+              PWABucket
+            </HyperLink>
           </p>
 
           <p>
