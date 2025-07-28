@@ -1,7 +1,53 @@
-import { LuMouse } from "react-icons/lu";
+import { LuMail, LuMouse, LuPhone } from "react-icons/lu";
+import { Link as ScrollLink } from "react-scroll";
+import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
+import contact from "../resources/contact";
 import { cn } from "../lib/utils";
+
+type ContactLinkButtonProps = React.ComponentPropsWithoutRef<"a"> & {
+  icon: React.ComponentType<{ className?: string }>;
+};
+
+const ContactLinkButton = ({
+  icon: Icon,
+  ...props
+}: ContactLinkButtonProps) => (
+  <a
+    {...props}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={cn(
+      "size-10  rounded-full transition-colors",
+      "flex items-center justify-center",
+      "bg-neutral-700 text-green-500",
+      "hover:bg-green-500 hover:text-black",
+      "focus:bg-green-500 focus:text-black focus:outline-none",
+      props.className
+    )}
+  >
+    <Icon className="size-5" />
+  </a>
+);
+
+const ContactLinks = () => (
+  <div className="flex flex-wrap items-center gap-2 my-2">
+    <ContactLinkButton title="Email" href={contact.email} icon={LuMail} />
+    <ContactLinkButton
+      title="LinkedIn"
+      href={contact.linkedin}
+      icon={SiLinkedin}
+    />
+    <ContactLinkButton
+      title="WhatsApp"
+      href={contact.whatsapp}
+      icon={SiWhatsapp}
+    />
+    <ContactLinkButton title="Phone" href={contact.phone} icon={LuPhone} />
+    <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
+  </div>
+);
 
 export default function Hero() {
   return (
@@ -10,7 +56,7 @@ export default function Hero() {
         <div
           className={cn(
             "flex flex-col",
-            "items-center justify-center gap-3",
+            "items-center justify-center gap-4",
             "md:items-start md:flex-row"
           )}
         >
@@ -21,7 +67,7 @@ export default function Hero() {
             className="size-36 md:size-48 rounded-full shrink-0"
           />
 
-          <div className="flex flex-col items-center gap-2 md:items-start">
+          <div className="flex flex-col items-center gap-1 md:items-start">
             {/* Intro */}
             <h1 className="text-4xl text-center font-fredoka-one leading-snug tracking-tight">
               Hi, I'm{" "}
@@ -39,17 +85,23 @@ export default function Hero() {
               performance and UX.
             </p>
 
+            {/* Contact Links */}
+            <ContactLinks />
+
             {/* CTA Button */}
-            <a
-              href="#projects"
+            <ScrollLink
+              smooth
+              duration={1000}
+              to="projects"
               className={cn(
                 "bg-green-500 text-black px-4 py-2",
                 "hover:bg-green-600 transition-colors",
-                "focus:outline-none focus:ring-2 focus:ring-green-700"
+                "focus:outline-none focus:ring-2 focus:ring-green-700",
+                "cursor-pointer"
               )}
             >
               View My Work
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </div>

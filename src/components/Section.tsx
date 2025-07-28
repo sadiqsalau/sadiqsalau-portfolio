@@ -11,14 +11,8 @@ type SectionProps = React.HTMLAttributes<HTMLElement> & {
 
 export default function Section({ title, children, ...props }: SectionProps) {
   return (
-    <section
-      {...props}
-      className={cn(
-        "mx-auto max-w-7xl py-12 px-4 flex flex-col gap-4",
-        props.className
-      )}
-    >
-      <h1 className="text-4xl font-light text-green-500">{title}</h1>
+    <section {...props} className={cn("flex flex-col gap-4", props.className)}>
+      <h1 className="text-4xl font-fredoka-one text-green-500">{title}</h1>
       {children}
     </section>
   );
