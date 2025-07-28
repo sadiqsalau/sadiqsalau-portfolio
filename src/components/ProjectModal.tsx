@@ -39,17 +39,20 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
 
         {/* Overview */}
         {project.overview ? (
-          <p
+          <div
             className={cn(
               "p-4 rounded-xl",
-              "bg-stone-800",
-              "whitespace-pre-line"
+              "bg-stone-800 text-stone-200",
+              "whitespace-pre-line font-medium",
+              "flex flex-col gap-2"
             )}
           >
-            {typeof project.overview === "function"
-              ? project.overview()
-              : project.overview}
-          </p>
+            {typeof project.overview === "function" ? (
+              project.overview()
+            ) : (
+              <p>{project.overview}</p>
+            )}
+          </div>
         ) : null}
 
         {/* Photos */}

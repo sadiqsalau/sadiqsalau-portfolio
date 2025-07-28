@@ -23,7 +23,7 @@ export const ProjectPhotoAlbum = ({
     breakpoints={[300, 600, 1200]}
     render={{
       wrapper: ({ children, ...props }, { index }) => (
-        <div {...props} className="relative overflow-hidden">
+        <div {...props} className="relative overflow-clip">
           {children}
           {/* Count */}
           {total > photos.length && index === photos.length - 1 ? (

@@ -3,13 +3,13 @@ import path from "path-browserify";
 import type { Project, ProjectImage } from "../../types/project";
 
 export const PROJECTS_ORDER = [
-  "pwabucket",
+  "pluxscore",
   "purrfect-farmer",
+  "pwabucket",
   "keza",
   "kazeemtanimu",
   "twelvesquares",
   "stellar-cargo",
-  "pluxscore",
   "emmanjoku",
   "kanak-food-global",
 ];
