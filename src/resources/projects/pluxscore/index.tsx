@@ -2,14 +2,14 @@ import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
 export default {
-  title: "PluxScore",
+  title: "Pluxscore",
   link: "https://pluxscore.com.ng",
   tags: ["Client", "React", "Laravel", "PWA", "Real-time"],
   description: "All-in-one social platform for sports fans.",
   overview: () => (
     <>
       <p>
-        <strong>PluxScore</strong> is a progressive web app built for sports
+        <strong>Pluxscore</strong> is a progressive web app built for sports
         fans — offering live scores, match highlights, real-time chat, and
         social features in one place. It was developed under{" "}
         <HyperLink target="_blank" href="https://pluxmedianetwork.com.ng">
