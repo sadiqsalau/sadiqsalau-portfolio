@@ -2,7 +2,7 @@ import path from "path-browserify";
 
 import type { Project, ProjectImage } from "../../types/project";
 
-const PROJECTS_ORDER = [
+export const PROJECTS_ORDER = [
   "pwabucket",
   "purrfect-farmer",
   "keza",
@@ -27,7 +27,7 @@ const mapProjectImages = (entries: Record<string, ProjectImage>) =>
     return result;
   }, new Map() as Map<string, ProjectImage[]>);
 
-const icons = Object.entries(
+export const projectsIcon = Object.entries(
   import.meta.glob("./*/*.png", {
     eager: true,
     import: "default",
@@ -42,7 +42,7 @@ const icons = Object.entries(
   return result;
 }, new Map() as Map<string, string>);
 
-const images = mapProjectImages(
+export const projectsImages = mapProjectImages(
   import.meta.glob("./*/screenshots/*", {
     eager: true,
     import: "default",
@@ -53,7 +53,7 @@ const images = mapProjectImages(
   })
 );
 
-const previewImages = mapProjectImages(
+export const projectsPreviewImages = mapProjectImages(
   import.meta.glob("./*/screenshots/*", {
     eager: true,
     import: "default",
@@ -67,7 +67,7 @@ const previewImages = mapProjectImages(
 );
 
 const projects = Object.entries(
-  import.meta.glob("./*/index.ts", {
+  import.meta.glob("./*/index.{ts,tsx}", {
     eager: true,
     import: "default",
   }) as Record<string, Project>
@@ -78,9 +78,9 @@ const projects = Object.entries(
     return {
       ...project,
       id,
-      icon: icons.get(id),
-      images: images.get(id) || [],
-      previewImages: previewImages.get(id) || [],
+      icon: projectsIcon.get(id),
+      images: projectsImages.get(id) || [],
+      previewImages: projectsPreviewImages.get(id) || [],
     };
   })
   .sort((a, b) => {

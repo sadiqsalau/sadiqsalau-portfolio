@@ -37,17 +37,18 @@ export default function ProjectModal({ project, ...props }: ProjectModalProps) {
       <ProjectModalContainer {...props}>
         <ProjectModalHeader project={project} />
 
-        {/* Full Description */}
-        {project.fullDescription ? (
+        {/* Overview */}
+        {project.overview ? (
           <p
             className={cn(
-              "border border-green-500",
               "p-4 rounded-xl",
               "bg-stone-800",
               "whitespace-pre-line"
             )}
           >
-            {project.fullDescription}
+            {typeof project.overview === "function"
+              ? project.overview()
+              : project.overview}
           </p>
         ) : null}
 

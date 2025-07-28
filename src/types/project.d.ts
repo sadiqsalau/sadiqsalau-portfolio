@@ -9,10 +9,10 @@ export interface Project {
   title: string;
   link: string;
   description: string;
-  fullDescription?: string;
+  overview?: string | (() => JSX.Element);
   repo?: string;
   icon?: string;
   tags: string[];
-  images: ProjectImage[];
+  images?: ProjectImage[];
   previewImages?: ProjectImage[];
 }

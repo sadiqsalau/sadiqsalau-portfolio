@@ -1,4 +1,4 @@
-import { LuMouse, LuSparkles } from "react-icons/lu";
+import { LuMouse } from "react-icons/lu";
 
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
 import { cn } from "../lib/utils";
@@ -30,15 +30,13 @@ export default function Hero() {
 
             {/* Tagline */}
             <p className="text-sm uppercase tracking-wide text-stone-300 max-md:text-center">
-              Full-Stack Web Developer • React / Laravel / Node.js •
-              Offline-First Apps
+              Software Engineer
             </p>
 
             {/* Description */}
             <p className="max-md:text-center">
-              Building fast, offline-first apps with React, Laravel, and Node.js
-              — now enhanced with <LuSparkles className="inline-flex size-4" />{" "}
-              AI tools like Copilot, Bolt, and Lovable.
+              Building fast, offline-first apps with a strong focus on
+              performance and UX.
             </p>
 
             {/* CTA Button */}
