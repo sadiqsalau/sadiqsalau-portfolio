@@ -6,12 +6,13 @@ export const PROJECTS_ORDER = [
   "pluxscore",
   "purrfect-farmer",
   "pwabucket",
-  "keza",
-  "kazeemtanimu",
-  "twelvesquares",
   "stellar-cargo",
   "emmanjoku",
+  "kazeemtanimu",
+  "twelvesquares",
   "kanak-food-global",
+  "keza",
+  "purrfect-whiskers",
 ];
 
 const mapProjectImages = (entries: Record<string, ProjectImage>) =>
