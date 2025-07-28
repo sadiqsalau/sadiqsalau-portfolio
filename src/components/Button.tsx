@@ -3,16 +3,16 @@ import type { ClassValue } from "clsx";
 
 import { cn } from "../lib/utils";
 
-type Props<T extends React.ElementType> = {
+type ButtonProps<T extends React.ElementType> = {
   as?: T;
   className?: ClassValue;
-} & React.ComponentPropsWithoutRef<T>;
+} & Omit<React.ComponentPropsWithoutRef<T>, "as" | "className">;
 
 const Button = <T extends React.ElementType = "button">({
   as,
   className,
   ...props
-}: Props<T>) => {
+}: ButtonProps<T>) => {
   const Component = as || "button";
 
   return (
