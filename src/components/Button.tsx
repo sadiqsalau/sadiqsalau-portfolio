@@ -1,18 +1,16 @@
-import React from "react";
 import type { ClassValue } from "clsx";
 
 import { cn } from "../lib/utils";
 
-type ButtonProps<T extends React.ElementType> = {
-  as?: T;
+type ButtonProps = {
   className?: ClassValue;
-} & Omit<React.ComponentPropsWithoutRef<T>, "as" | "className">;
+};
 
-const Button = <T extends React.ElementType = "button">({
+const Button: DynamicComponent<"button", ButtonProps> = ({
   as,
   className,
   ...props
-}: ButtonProps<T>) => {
+}) => {
   const Component = as || "button";
 
   return (
