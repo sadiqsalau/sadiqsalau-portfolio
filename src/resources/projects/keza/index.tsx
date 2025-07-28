@@ -32,7 +32,7 @@ export default {
 
       <p>
         It supports JSON, TXT, CSV, and XLS exports, making it ideal for
-        managing wallets for savings, rent, spending, and more—without
+        generating wallets for savings, rent, spending, and more—without
         compromising on privacy or efficiency.
       </p>
     </>

@@ -2,17 +2,15 @@ import path from "path-browserify";
 
 import type { Project, ProjectImage } from "../../types/project";
 
-export const PROJECTS_ORDER = [
+export const FEATURED_PROJECTS_IDS = [
   "pluxscore",
   "purrfect-farmer",
   "pwabucket",
-  "stellar-cargo",
-  "emmanjoku",
   "kazeemtanimu",
   "twelvesquares",
-  "kanak-food-global",
   "keza",
-  "purrfect-whiskers",
+  "laravel-otp",
+  "stellar-cargo",
 ];
 
 const mapProjectImages = (entries: Record<string, ProjectImage>) =>
@@ -85,9 +83,17 @@ const projects = Object.entries(
     };
   })
   .sort((a, b) => {
-    const aIndex = PROJECTS_ORDER.indexOf(a.id);
-    const bIndex = PROJECTS_ORDER.indexOf(b.id);
-    return aIndex - bIndex;
+    const aIndex = FEATURED_PROJECTS_IDS.indexOf(a.id);
+    const bIndex = FEATURED_PROJECTS_IDS.indexOf(b.id);
+
+    const aRank = aIndex === -1 ? Infinity : aIndex;
+    const bRank = bIndex === -1 ? Infinity : bIndex;
+
+    return aRank - bRank;
   });
+
+export const featuredProjects = projects.filter((item) =>
+  FEATURED_PROJECTS_IDS.includes(item.id)
+);
 
 export default projects;

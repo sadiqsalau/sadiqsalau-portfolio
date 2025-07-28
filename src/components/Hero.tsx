@@ -2,6 +2,7 @@ import { LuMail, LuMouse, LuPhone } from "react-icons/lu";
 import { Link as ScrollLink } from "react-scroll";
 import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
+import Button from "./Button";
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
 import contact from "../resources/contact";
 import { cn } from "../lib/utils";
@@ -89,19 +90,9 @@ export default function Hero() {
             <ContactLinks />
 
             {/* CTA Button */}
-            <ScrollLink
-              smooth
-              duration={1000}
-              to="projects"
-              className={cn(
-                "bg-green-500 text-black px-4 py-2",
-                "hover:bg-green-600 transition-colors",
-                "focus:outline-none focus:ring-2 focus:ring-green-700",
-                "cursor-pointer"
-              )}
-            >
+            <Button as={ScrollLink} smooth duration={1000} to="projects">
               View My Work
-            </ScrollLink>
+            </Button>
           </div>
         </div>
       </div>

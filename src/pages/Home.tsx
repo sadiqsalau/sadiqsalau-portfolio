@@ -1,6 +1,6 @@
 import About from "../components/About";
+import FeaturedProjects from "../components/FeaturedProjects";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
 import SectionsContainer from "../components/SectionsContainer";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <SectionsContainer>
         <About />
-        <Projects />
+        <FeaturedProjects />
       </SectionsContainer>
     </>
   );
