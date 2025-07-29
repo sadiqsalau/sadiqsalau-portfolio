@@ -1,5 +1,6 @@
 import type { ClassValue } from "clsx";
 
+import type { DynamicComponent } from "../types/types";
 import { cn } from "../lib/utils";
 
 interface SectionHeadingProps {

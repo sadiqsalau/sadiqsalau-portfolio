@@ -4,6 +4,8 @@
 @import "@fontsource/quicksand/500.css";
 @import "@fontsource/quicksand/700.css";
 @import "@fontsource/fredoka-one/400.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @theme inline {
   --font-sans: Quicksand, ui-sans-serif, system-ui, sans-serif,

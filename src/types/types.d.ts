@@ -1,9 +1,9 @@
-type DynamicComponentProps<T extends React.ElementType, ExtraProps> = {
+export type DynamicComponentProps<T extends React.ElementType, ExtraProps> = {
   as?: T;
 } & Omit<React.ComponentPropsWithoutRef<T>, "as" | keyof ExtraProps> &
   ExtraProps;
 
-type DynamicComponent<
+export type DynamicComponent<
   DefaultComponent extends React.ElementType,
   ExtraProps = object
 > = <T extends React.ElementType = DefaultComponent>(
