@@ -43,6 +43,16 @@ export default function AboutSection() {
           </p>
 
           <p>
+            I also enjoy teaching—I've led sessions at{" "}
+            <HyperLink target="_blank" href="https://akmustech.com.ng">
+              Akmustech
+            </HyperLink>{" "}
+            for students preparing for CS degrees, showing them how to grasp
+            core programming concepts across languages. I've also run a
+            beginner-friendly Python course for kids during the holidays.
+          </p>
+
+          <p>
             Whether it's a custom backend, interactive frontend, or lightweight{" "}
             <a
               title="Progressive Web App"
