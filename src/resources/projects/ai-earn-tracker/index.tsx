@@ -1,0 +1,36 @@
+import type { Project } from "../../../types/project";
+
+export default {
+  title: "AiEarn Tracker",
+  link: "https://ai-earn.pwabucket.com",
+  repo: "https://github.com/pwabucket/pwa-ai-earn",
+  tags: ["PWA", "Investment Tracker", "Offline-First"],
+  description:
+    "A simple offline-capable PWA to help track and simulate investments over time.",
+  overview: () => (
+    <>
+      <p>
+        I built <strong>AiEarn Tracker</strong> to help a friend who wanted to
+        monitor his investments but didn't know how to run scripts like I do. So
+        I made something visual — a simple, browser-based app that just works.
+      </p>
+
+      <p>
+        It allows you to log daily investments, track progress, and simulate
+        future returns with ease. The built-in calendar makes navigation
+        effortless, and you can pick any date to see how things play out over
+        time.
+      </p>
+
+      <p>
+        Like every PWA on <strong>PWABucket</strong>, I built this solo —
+        keeping it lightweight, offline-first, and focused on usability for
+        non-technical users.
+      </p>
+
+      <p>
+        Built with <strong>React</strong> and <strong>TailwindCSS</strong>.
+      </p>
+    </>
+  ),
+} as Project;
