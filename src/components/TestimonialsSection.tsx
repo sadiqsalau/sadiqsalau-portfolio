@@ -67,7 +67,9 @@ export default function TestimonialsSection() {
   return (
     <Section title="Testimonials">
       <p className="text-stone-300">
-        These are some of the testimonials from my clients and colleagues.
+        Here's what some of the people I've worked with have to say. I take
+        pride in doing the work right and making sure things just work — whether
+        it's a full platform build or technical support on short notice.
       </p>
 
       <div className="-m-1 py-2">
