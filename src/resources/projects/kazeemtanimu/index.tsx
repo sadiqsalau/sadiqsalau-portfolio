@@ -26,7 +26,7 @@ export default {
       <p>
         What stood out for me on this project was how well the visuals and
         layout 😍 blended. I first built it using plain HTML, CSS, and
-        JavaScript, then later{" "}
+        Bootstrap, then later{" "}
         <strong>rebuilt it using React and TailwindCSS</strong> for better
         maintainability and responsiveness.
       </p>

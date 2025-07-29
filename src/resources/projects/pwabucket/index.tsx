@@ -11,7 +11,7 @@ export default {
     <>
       <p>
         <strong>PWABucket</strong> is an open-source app store dedicated to
-        Progressive Web Apps—built to spotlight tools that run offline,
+        Progressive Web Apps — built to spotlight tools that run offline,
         prioritize privacy, and deliver a seamless experience without needing a
         native install.
       </p>
@@ -34,8 +34,14 @@ export default {
       </p>
 
       <p>
-        It's more than a gallery—it's a personal platform to unify, showcase,
-        and maintain all my offline-first work in one place.
+        It's a personal platform to unify, showcase, and maintain all my
+        offline-first work in one place.
+      </p>
+
+      <p>
+        For this, I used <strong>React</strong> and <strong>TailwindCSS</strong>{" "}
+        primarily, there's no backend involved. The app is fully static and
+        hosted on GitHub Pages.
       </p>
     </>
   ),

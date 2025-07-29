@@ -7,7 +7,7 @@ export default function ProjectModalContainer(props: DialogProps) {
       {...props}
       transition
       className={cn(
-        "fixed inset-0 w-screen overflow-y-auto px-4 py-12 bg-black/80",
+        "fixed inset-0 w-screen overflow-y-auto p-4 bg-black/80",
         "transition duration-300 ease-out data-closed:opacity-0"
       )}
     >

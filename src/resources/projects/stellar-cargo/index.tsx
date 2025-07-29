@@ -11,11 +11,12 @@ export default {
   overview: () => (
     <>
       <p>
-        Stellar Cargo is the first Progressive Web App I officially published on{" "}
+        <strong>Stellar Cargo</strong> is the first Progressive Web App I
+        officially published on{" "}
         <HyperLink target="_blank" href="https://pwabucket.com">
           PWABucket
         </HyperLink>
-        —and the first to get real installs from friends and the{" "}
+        — and the first to get real installs from friends and the{" "}
         <HyperLink target="_blank" href="https://purrfectfarmer.com">
           Purrfect Farmer
         </HyperLink>{" "}
@@ -33,6 +34,20 @@ export default {
         The response was validating—it proved there was demand, and it gave me
         the motivation to keep creating more offline-first PWAs for real-world
         problems.
+      </p>
+
+      <p>
+        It supports multiple wallets, token splitting and merging, and works
+        fully offline. You can also sync your data to Google Drive for backup .
+      </p>
+
+      <p>
+        It was built with <strong>React</strong>, <strong>TailwindCSS</strong>{" "}
+        and{" "}
+        <HyperLink target="_blank" href="https://developers.stellar.org/">
+          <strong>Stellar SDK</strong>
+        </HyperLink>
+        .
       </p>
     </>
   ),

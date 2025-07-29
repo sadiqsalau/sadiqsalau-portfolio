@@ -21,15 +21,41 @@ export default {
       <p>
         This project has played a big role in my growth 🫡 as a Software
         Engineer. I <strong>rebuilt it multiple times</strong> over the years —
-        from raw PHP to CodeIgniter, and finally to{" "}
-        <strong>React and Laravel</strong> — each version reflecting a new phase
-        of learning and improvement.
+        from <strong>raw PHP</strong> to <strong>CodeIgniter</strong>, and
+        finally to <strong>React and Laravel</strong> — each version reflecting
+        a new phase of learning and improvement.
       </p>
 
       <p>
-        I handled everything from backend to frontend, with Laravel Echo
-        handling the real-time layer. It runs as a PWA, optimized for mobile,
-        though not fully offline.
+        For the livestream feature, I used <strong>Node.js</strong> to handle
+        issues with CORS when streaming video from multiple sources.
+      </p>
+
+      <p>
+        I also built a custom package (
+        <HyperLink
+          href="https://www.npmjs.com/package/express-soketi"
+          target="_blank"
+        >
+          express-soketi
+        </HyperLink>
+        ) to be able to use{" "}
+        <HyperLink href="https://docs.soketi.app/" target="_blank">
+          soketi
+        </HyperLink>{" "}
+        on cPanel Hosting. This was necessary to be able to use{" "}
+        <HyperLink
+          href="https://laravel.com/docs/10.x/broadcasting"
+          target="_blank"
+        >
+          Laravel Echo
+        </HyperLink>
+        .
+      </p>
+
+      <p>
+        I handled everything from backend to frontend. It runs as a PWA,
+        optimized for mobile, though not fully offline.
       </p>
     </>
   ),

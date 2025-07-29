@@ -63,8 +63,8 @@ export default {
       </p>
 
       <p>
-        This isn't just a script — it's a fully featured suite for automation.
-        You can check out more at{" "}
+        It's now a fully featured suite for automation. You can check out more
+        at{" "}
         <HyperLink href="https://purrfectfarmer.com" target="_blank">
           purrfectfarmer.com
         </HyperLink>{" "}

@@ -18,10 +18,10 @@ export default {
       </p>
 
       <p>
-        I used <strong>React and Laravel</strong> to build everything from
-        scratch — no themes, no shortcuts. The design you see on the site was{" "}
-        <strong>handcrafted by me</strong>, tailored to reflect their brand and
-        the work they do across tech and security in Africa.
+        I used <strong>React, TailwindCSS and Laravel</strong> to build
+        everything from scratch — no themes, no shortcuts. The design you see on
+        the site was <strong>handcrafted by me</strong>, tailored to reflect
+        their brand and the work they do across tech and security in Africa.
       </p>
 
       <p>

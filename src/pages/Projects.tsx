@@ -17,8 +17,8 @@ export default function Projects() {
 
         <Section title="Projects">
           <p className="text-stone-300">
-            This is a list of my recent and favorite projects. A few were built
-            for clients, but most came from problems I needed to solve.
+            This is a list of my projects. You can browse through them to see
+            the work I've done.
           </p>
           <ProjectsList projects={projects} />
         </Section>

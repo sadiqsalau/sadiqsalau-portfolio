@@ -14,14 +14,12 @@ export default {
           TwelveSquares
         </HyperLink>
         . I handled the full development and deployment of the corporate website
-        for <strong>Kanak Food Global</strong>—a food supply and cold storage
-        company based in Abuja, Nigeria.
+        for <strong>Kanak Food Global</strong> — a food supply and cold storage
+        company based in Lugbe, Abuja, Nigeria.
       </p>
 
       <p>
-        The site serves as a professional online presence for the business,
-        focusing on clarity and accessibility for their customer base in Lugbe
-        and beyond.
+        I built the site with <strong>Bootstrap</strong>.
       </p>
     </>
   ),
