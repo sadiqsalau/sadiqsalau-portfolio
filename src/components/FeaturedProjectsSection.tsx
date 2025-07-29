@@ -6,7 +6,7 @@ import ProjectsList from "./ProjectsList";
 import Section from "./Section";
 import { featuredProjects } from "../resources/projects";
 
-export default function FeaturedProjects() {
+export default function FeaturedProjectsSection() {
   return (
     <Element name="projects">
       <Section title="Projects">

@@ -2,7 +2,7 @@ import AboutProfilePicture from "../assets/images/about-profile-picture.jpg?w=10
 import HyperLink from "./HyperLink";
 import Section from "./Section";
 
-export default function About() {
+export default function AboutSection() {
   return (
     <Section title="About Me">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
