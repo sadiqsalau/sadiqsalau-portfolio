@@ -6,6 +6,6 @@ export default {
   name: "Nsikakabasi Nsikak",
   message:
     "He was able to work collaboratively with our team and provide valuable insights and feedback. They were able to deliver projects on time and within budget.",
-  position: "CEO",
+  link: "https://twelvesquares.net",
   company: "Twelvesquares",
 } as Testimonial;

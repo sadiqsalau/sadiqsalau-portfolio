@@ -6,6 +6,6 @@ export default {
   name: "Engr. Akeusola Musodiq",
   message:
     "Sadiq is highly skilled and knowledgeable. He is able to troubleshoot complex issues and provide effective solutions.",
-  position: "CEO",
+  link: "https://akmustech.com.ng",
   company: "Akmustech",
 } as Testimonial;

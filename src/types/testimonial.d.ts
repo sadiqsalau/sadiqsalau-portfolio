@@ -1,7 +1,7 @@
 export interface Testimonial {
   name: string;
-  position: string;
   company: string;
+  link: string;
   photo: string;
   message: string;
 }

@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import { forwardRef } from "react";
 
+import HyperLink from "./HyperLink";
 import Section from "./Section";
 import testimonials from "../resources/testimonials";
 import { cn } from "../lib/utils";
@@ -90,15 +91,17 @@ export default function TestimonialsSection() {
                     <q>{testimonial.message}</q>
                   </div>
 
-                  {/* Position and Company */}
-                  <div className="bg-stone-700 text-sm px-2 rounded-full text-stone-300">
-                    {testimonial.position} &bull; {testimonial.company}
-                  </div>
-
                   {/* Name */}
                   <h4 className="text-center font-fredoka-one text-green-500">
                     {testimonial.name}
                   </h4>
+
+                  {/*  Company */}
+                  <div className="bg-stone-700 text-sm px-2 rounded-full text-stone-300">
+                    <HyperLink target="_blank" href={testimonial.link}>
+                      {testimonial.company}
+                    </HyperLink>
+                  </div>
                 </div>
 
                 {/* Photo */}
