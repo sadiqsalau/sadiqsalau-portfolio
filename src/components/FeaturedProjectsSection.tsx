@@ -11,8 +11,13 @@ export default function FeaturedProjectsSection() {
     <Element name="projects">
       <Section title="Projects">
         <p className="text-stone-300">
-          These are some of my recent and favorite projects. A few were built
-          for clients, but most came from problems I needed to solve.
+          These are some of my favorite projects. A few were built for clients,
+          but most came from problems I needed to solve. You can view the full
+          list on my{" "}
+          <Link to="/projects" className="text-green-500 hover:underline">
+            projects page
+          </Link>
+          .
         </p>
 
         <ProjectsList projects={featuredProjects} />
