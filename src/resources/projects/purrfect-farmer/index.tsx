@@ -38,8 +38,14 @@ export default {
         through a single interface.
       </p>
       <p>
-        I've pushed over 80,000 lines of code to this repo alone, not counting
-        other tools like{" "}
+        I've pushed over{" "}
+        <HyperLink
+          target="_blank"
+          href="https://github.com/purrfect-farmer/purrfect-farmer/graphs/contributors"
+        >
+          100,000 lines of code
+        </HyperLink>{" "}
+        to this repo alone, not counting other tools like{" "}
         <HyperLink
           href="https://github.com/purrfect-farmer/purrfect-whiskers"
           target="_blank"
