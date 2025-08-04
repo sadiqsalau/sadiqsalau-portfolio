@@ -11,6 +11,7 @@ export const FEATURED_PROJECTS_IDS = [
   "keza",
   "laravel-otp",
   "stellar-cargo",
+  "mochi",
 ];
 
 const mapProjectImages = (entries: Record<string, ProjectImage>) =>
