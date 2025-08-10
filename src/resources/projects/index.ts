@@ -6,6 +6,7 @@ export const FEATURED_PROJECTS_IDS = [
   "pluxscore",
   "purrfect-farmer",
   "pwabucket",
+  "safe",
   "kazeemtanimu",
   "twelvesquares",
   "keza",
