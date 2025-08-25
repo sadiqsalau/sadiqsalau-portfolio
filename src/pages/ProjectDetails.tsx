@@ -13,8 +13,6 @@ export default function ProjectDetails() {
     return <div className="text-stone-300">Project not found</div>;
   }
 
-  console.log(project);
-
   return (
     <>
       <Helmet>
