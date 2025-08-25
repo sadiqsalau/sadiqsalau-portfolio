@@ -1,5 +1,5 @@
-import { LuMail, LuMouse, LuPhone } from "react-icons/lu";
-import { Link as ScrollLink } from "react-scroll";
+import { Link, NavLink } from "react-router";
+import { LuMail, LuPhone } from "react-icons/lu";
 import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 import Button from "./Button";
@@ -33,7 +33,7 @@ const ContactLinkButton = ({
 );
 
 const ContactLinks = () => (
-  <div className="flex flex-wrap items-center gap-2 my-2">
+  <div className="flex flex-wrap justify-center items-center gap-2 my-2">
     <ContactLinkButton title="Email" href={contact.email} icon={LuMail} />
     <ContactLinkButton
       title="LinkedIn"
@@ -48,6 +48,20 @@ const ContactLinks = () => (
     <ContactLinkButton title="Phone" href={contact.phone} icon={LuPhone} />
     <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
   </div>
+);
+
+const HeroLink = (props: React.ComponentProps<typeof NavLink>) => (
+  <NavLink
+    {...props}
+    className={({ isActive }) =>
+      cn(
+        " uppercase",
+        isActive
+          ? "text-green-500 font-bold"
+          : "text-stone-300 hover:underline hover:text-green-400"
+      )
+    }
+  />
 );
 
 export default function Hero() {
@@ -90,14 +104,18 @@ export default function Hero() {
             <ContactLinks />
 
             {/* CTA Button */}
-            <Button as={ScrollLink} smooth duration={1000} to="projects">
+            <Button as={Link} to="/projects">
               View My Work
             </Button>
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <LuMouse className="animate-bounce size-10" strokeWidth="1" />
+      <div className="flex flex-wrap justify-center gap-4">
+        {/* Navigation Links */}
+        <HeroLink to="/">Home</HeroLink>
+        <HeroLink to="/about">About</HeroLink>
+        <HeroLink to="/projects">Projects</HeroLink>
+        <HeroLink to="/contact">Contact</HeroLink>
       </div>
     </div>
   );
