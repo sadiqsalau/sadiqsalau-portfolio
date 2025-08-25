@@ -1,8 +1,6 @@
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 
-import ProjectModal from "./ProjectModal";
 import ProjectTags from "./ProjectTags";
-import useNavigateBack from "../hooks/useNavigateBack";
 import type { Project } from "../types/project";
 import { ProjectPhotoAlbum } from "./ProjectPhotoAlbum";
 import { cn } from "../lib/utils";
@@ -15,19 +13,11 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const navigateBack = useNavigateBack();
-  const location = useLocation();
-  const modalIsOpened = project.id === location.state?.project;
-
   return (
     <>
       <Link
         replace={false}
-        to={location}
-        state={{
-          ...location.state,
-          project: project.id,
-        }}
+        to={`/projects/${project.id}`}
         className={cn(
           "bg-stone-800",
           "border border-transparent hover:border-green-500",
@@ -64,12 +54,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
         ) : null}
       </Link>
-
-      <ProjectModal
-        project={project}
-        open={modalIsOpened}
-        onClose={() => navigateBack()}
-      />
     </>
   );
 }
