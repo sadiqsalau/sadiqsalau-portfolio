@@ -1,13 +1,28 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Stellar Cargo",
   link: "https://stellar-cargo.pwabucket.com",
   repo: "https://github.com/pwabucket/pwa-stellar-cargo",
   tags: ["PWA", "Crypto Wallets", "Offline-First", "Stellar"],
   description:
     "Offline-first Stellar wallet with multi-wallet management and token split/merge features.",
+
+  metaTitle: "Stellar Cargo – Offline-First Stellar Wallet PWA",
+  metaDescription:
+    "Stellar Cargo is an offline-first Stellar wallet Progressive Web App. Manage multiple wallets, view total balances, split and merge tokens, and sync securely with Google Drive.",
+  keywords: [
+    "Stellar Cargo",
+    "Stellar wallet PWA",
+    "crypto wallet Progressive Web App",
+    "offline-first wallet",
+    "multi-wallet management",
+    "token split merge Stellar",
+    "privacy focused crypto wallet",
+    "React Stellar SDK",
+  ],
+
   overview: () => (
     <>
       <p>
@@ -51,4 +66,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

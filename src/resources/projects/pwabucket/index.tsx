@@ -1,12 +1,26 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "PWABucket",
   link: "https://pwabucket.com",
   repo: "https://github.com/pwabucket/pwabucket",
   tags: ["PWA", "Offline-First", "App Store"],
   description: "Progressive Web App Store for offline-first apps.",
+  metaTitle: "PWABucket - Progressive Web App Store for Offline-First Apps",
+  metaDescription:
+    "PWABucket is an open-source app store for Progressive Web Apps (PWAs). Discover and explore offline-first apps that prioritize privacy and seamless performance without native installs.",
+  keywords: [
+    "PWABucket",
+    "Progressive Web App Store",
+    "PWA apps",
+    "offline-first apps",
+    "privacy focused apps",
+    "open-source PWA store",
+    "React PWA",
+    "GitHub Pages app store",
+  ],
+
   overview: () => (
     <>
       <p>
@@ -45,4 +59,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

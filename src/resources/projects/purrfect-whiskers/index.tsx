@@ -1,7 +1,7 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Purrfect Whiskers",
   link: "https://github.com/purrfect-farmer/purrfect-whiskers/releases/latest",
   repo: "https://github.com/purrfect-farmer/purrfect-whiskers",
@@ -14,7 +14,22 @@ export default {
     "Browser Isolation",
   ],
   description:
-    "Electron app built to easily manage multiple Telegram accounts with full isolation and backup support.",
+    "Electron app built to easily manage multiple instances of the Purrfect Farmer Chrome extension with full isolation and backup support.",
+
+  metaTitle: "Purrfect Whiskers - Multi-Instance Manager for Purrfect Farmer",
+  metaDescription:
+    "Purrfect Whiskers is a desktop app that lets you run and manage multiple instances of the Purrfect Farmer Chrome extension. Organize sessions in rows or columns and streamline your automation workflow with ease.",
+  keywords: [
+    "Purrfect Whiskers",
+    "Purrfect Farmer manager",
+    "multi-instance desktop app",
+    "automation workflow tool",
+    "Purrfect Farmer extension",
+    "Electron desktop app",
+    "manage multiple Chrome extensions",
+    "automation productivity",
+  ],
+
   overview: () => (
     <>
       <p>
@@ -48,4 +63,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

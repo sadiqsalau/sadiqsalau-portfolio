@@ -1,6 +1,6 @@
-import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router";
 
+import PageSEO from "../components/PageSEO";
 import ProjectView from "../components/ProjectView";
 import projects from "../resources/projects";
 
@@ -15,19 +15,24 @@ export default function ProjectDetails() {
 
   return (
     <>
-      <Helmet>
-        <title>{project.title} - Sadiq Salau</title>
-        <meta name="description" content={project.description} />
-        <meta property="og:title" content={project.title} />
-        <meta property="og:description" content={project.description} />
-        {project.images.map((image, index) => (
-          <meta
-            key={index}
-            property="og:image"
-            content={new URL(image.src, window.location.origin).href}
-          />
-        ))}
-      </Helmet>
+      <PageSEO
+        title={
+          project.metaTitle.includes("Sadiq Salau")
+            ? project.metaTitle
+            : `${project.metaTitle} | Sadiq Salau`
+        }
+        description={project.metaDescription}
+        images={project.images.map(
+          (image) => new URL(image.src, window.location.origin).href
+        )}
+        keywords={[
+          project.title,
+          `${project.title} by Sadiq Salau`,
+          ...(project.keywords || []),
+          "Web Applications Portfolio",
+          "PWA Developer Showcase",
+        ]}
+      />
 
       <ProjectView project={project} />
     </>

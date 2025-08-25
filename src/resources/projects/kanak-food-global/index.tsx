@@ -1,11 +1,22 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Kanak Food Global",
   link: "https://kanakfoodglobal.com.ng",
   tags: ["Client", "Developer", "TwelveSquares", "Corporate Website"],
   description: "Corporate website for a food distribution company.",
+
+  metaTitle: "Kanak Food Global – Corporate Website by Sadiq Salau",
+  metaDescription:
+    "Corporate website for Kanak Food Global, a food distribution and cold storage company in Abuja. Developed and deployed by Sadiq Salau using Bootstrap.",
+  keywords: [
+    "Kanak Food Global Website",
+    "Food Distribution Company Website",
+    "Bootstrap Developer Portfolio",
+    "Sadiq Salau Projects",
+    "Corporate Website Development",
+  ],
   overview: () => (
     <>
       <p>
@@ -23,4 +34,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

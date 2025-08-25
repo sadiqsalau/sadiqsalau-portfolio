@@ -7,12 +7,15 @@ export interface ProjectImage {
 export interface Project {
   id?: string;
   title: string;
-  link: string;
   description: string;
+  link: string;
+  metaTitle: string;
+  metaDescription: string;
   overview?: string | (() => JSX.Element);
   repo?: string;
   icon?: string;
   tags: string[];
+  keywords: string[];
   images?: ProjectImage[];
   previewImages?: ProjectImage[];
 }

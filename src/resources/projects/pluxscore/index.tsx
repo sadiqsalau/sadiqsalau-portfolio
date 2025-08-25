@@ -1,11 +1,26 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Pluxscore",
   link: "https://pluxscore.com.ng",
   tags: ["Client", "React", "Laravel", "PWA", "Real-time"],
   description: "All-in-one social platform for sports fans.",
+  metaTitle: "Pluxscore - Real-Time Sports Platform with Live Scores & Chat",
+  metaDescription:
+    "Pluxscore is a progressive web app for sports fans, offering live scores, match highlights, real-time chat, and social features in one place. Built with React and Laravel, optimized for mobile.",
+  keywords: [
+    "Pluxscore",
+    "sports PWA",
+    "live scores app",
+    "real-time sports chat",
+    "match highlights platform",
+    "React sports app",
+    "Laravel sports platform",
+    "sports fans social app",
+    "sports community Nigeria",
+    "mobile sports app",
+  ],
   overview: () => (
     <>
       <p>
@@ -59,4 +74,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

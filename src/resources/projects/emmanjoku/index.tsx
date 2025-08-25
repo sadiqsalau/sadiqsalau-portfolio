@@ -1,11 +1,21 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Emma Njoku",
   link: "https://emmanjoku.com",
   tags: ["Client", "Developer", "TwelveSquares", "Corporate Website"],
   description: "Corporate website for a global entrepreneur and executive.",
+  metaTitle: "Emma Njoku – Corporate Website by Sadiq Salau",
+  metaDescription:
+    "Corporate website built for entrepreneur Emma Njoku. Developed by Sadiq Salau using React, with full frontend design, responsiveness, and deployment.",
+  keywords: [
+    "Emma Njoku Website",
+    "Corporate Website Development",
+    "React Developer Portfolio",
+    "Sadiq Salau Projects",
+    "TwelveSquares Freelance Work",
+  ],
   overview: () => (
     <>
       <p>
@@ -27,4 +37,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

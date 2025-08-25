@@ -1,6 +1,6 @@
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Keza",
   link: "https://keza.pwabucket.com",
   repo: "https://github.com/pwabucket/pwa-keza",
@@ -15,6 +15,19 @@ export default {
   ],
   description:
     "Offline PWA for generating EVM, Solana, TON wallets and 12/24-word mnemonics with multi-format export.",
+
+  metaTitle: "Keza - Offline Crypto Wallet Generator PWA by Sadiq Salau",
+  metaDescription:
+    "Keza is an offline PWA for generating Bitcoin, EVM, Solana, and TON wallets with secure 12/24-word mnemonics. Supports multi-format exports including JSON, TXT, CSV, and XLS.",
+  keywords: [
+    "Keza Wallet Generator",
+    "Offline Crypto Wallet PWA",
+    "EVM Wallet Generator",
+    "Solana Wallet Generator",
+    "TON Wallet Generator",
+    "Mnemonic Generator App",
+    "Sadiq Salau Projects",
+  ],
   overview: () => (
     <>
       <p>
@@ -42,4 +55,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

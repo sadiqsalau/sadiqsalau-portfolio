@@ -1,11 +1,24 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Twelvesquares",
   link: "https://twelvesquares.net",
   tags: ["Client Work", "React", "Laravel", "Web Development"],
   description: "Corporate website for a tech and security services firm.",
+  metaTitle: "Twelvesquares - Tech & Security Services Website",
+  metaDescription:
+    "Corporate website for Twelvesquares, a tech and security services firm in Africa. Built from scratch with React, Laravel, and TailwindCSS for performance and SEO.",
+  keywords: [
+    "Twelvesquares",
+    "tech and security services website",
+    "corporate website development",
+    "React Laravel TailwindCSS",
+    "client work web development",
+    "custom business website",
+    "SEO optimized company site",
+  ],
+
   overview: () => (
     <>
       <p>
@@ -30,4 +43,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

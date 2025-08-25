@@ -1,7 +1,7 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Purrfect Farmer",
   link: "https://purrfectfarmer.com",
   repo: "https://github.com/purrfect-farmer/purrfect-farmer",
@@ -14,6 +14,25 @@ export default {
   ],
   description:
     "Advanced Telegram Mini App automation with seamless multi-account farming.",
+
+  metaTitle:
+    "Purrfect Farmer - Telegram Mini App Automation & Multi-Account Farming",
+  metaDescription:
+    "Automate Telegram Mini Apps like Blum and Not Pixel with Purrfect Farmer. A Chrome extension for multi-account farming, browser bots, and cloud automation.",
+  keywords: [
+    "Purrfect Farmer",
+    "Telegram automation",
+    "Telegram bot farming",
+    "Telegram mini app",
+    "Chrome extension",
+    "multi-account farming",
+    "browser bot",
+    "Blum farming",
+    "Not Pixel farming",
+    "Telegram airdrop automation",
+    "Purrfect Whiskers",
+    "Purrfect Fly",
+  ],
   overview: () => (
     <>
       <p>
@@ -76,4 +95,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

@@ -1,10 +1,19 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "AiEarn Tracker",
   link: "https://ai-earn.pwabucket.com",
   repo: "https://github.com/pwabucket/pwa-ai-earn",
+  metaTitle: "AiEarn Tracker – Investment Portfolio PWA",
+  metaDescription:
+    "AiEarn Tracker helps users monitor investments and returns in real time, with a clean PWA interface and offline support.",
+  keywords: [
+    "AiEarn Tracker",
+    "Investment Tracker PWA",
+    "Portfolio Tracker App",
+    "Financial PWA",
+  ],
   tags: ["PWA", "Investment Tracker", "Offline-First"],
   description:
     "A simple offline-capable PWA to help track and simulate investments over time.",
@@ -42,4 +51,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

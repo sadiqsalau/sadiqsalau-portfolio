@@ -1,12 +1,24 @@
 import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
-export default {
+export const project: Project = {
   title: "Kazeem Tanimu",
   link: "https://kazeemtanimu.com",
   tags: ["Client", "Developer", "TwelveSquares", "Corporate Website"],
   description:
     "Personal brand website for a fashion entrepreneur and strategist.",
+
+  metaTitle: "Kazeem Tanimu – Personal Brand Website by Sadiq Salau",
+  metaDescription:
+    "Personal brand website for Kazeem Tanimu, a Nigerian fashion entrepreneur and strategist. Developed by Sadiq Salau with React, TailwindCSS, and Bootstrap.",
+  keywords: [
+    "Kazeem Tanimu Website",
+    "Personal Brand Website",
+    "Fashion Entrepreneur Website",
+    "React and TailwindCSS Developer",
+    "Sadiq Salau Projects",
+    "Corporate Website Development",
+  ],
   overview: () => (
     <>
       <p>
@@ -38,4 +50,6 @@ export default {
       </p>
     </>
   ),
-} as Project;
+};
+
+export default project;

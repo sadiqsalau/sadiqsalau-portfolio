@@ -5,10 +5,16 @@ export default function Home() {
   return (
     <>
       <PageSEO
-        isFullTitle
-        title="Sadiq Salau — Software Engineer"
-        description="A curated showcase of my best work. I focus on performance, UX, and offline-first readiness."
+        title="Sadiq Salau - Web Applications Developer & Software Engineer"
+        description="Explore the portfolio of Sadiq Salau, a software engineer in Abuja, Nigeria. Specializing in performance-driven PWAs, UX-focused design, and offline-first web applications."
         images={["https://sadiqsalau.vercel.app/og.jpg"]}
+        keywords={[
+          "Sadiq Salau",
+          "Software Engineer Abuja",
+          "Web Applications Developer Nigeria",
+          "PWA Developer Portfolio",
+          "Hire Software Engineer Abuja",
+        ]}
       />
       <Hero />
     </>
