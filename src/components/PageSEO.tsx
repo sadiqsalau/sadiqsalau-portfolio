@@ -8,7 +8,7 @@ interface PageSEOProps {
 
 export default function PageSEO({ title, description, images }: PageSEOProps) {
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       <title>{title} - Sadiq Salau</title>
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
