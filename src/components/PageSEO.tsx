@@ -5,18 +5,22 @@ interface PageSEOProps {
   description: string;
   images?: string[];
   isFullTitle?: boolean;
+  keywords?: string[];
 }
 
 export default function PageSEO({
   title,
   description,
   images,
+  keywords,
   isFullTitle,
 }: PageSEOProps) {
   return (
     <Helmet prioritizeSeoTags>
       <title>{isFullTitle ? title : `${title} - Sadiq Salau`}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords?.join(", ")} />
+
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       {images?.map((image, index) => (
