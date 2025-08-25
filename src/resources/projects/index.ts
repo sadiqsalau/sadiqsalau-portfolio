@@ -12,6 +12,7 @@ export const FEATURED_PROJECTS_IDS = [
   "keza",
   "laravel-otp",
   "stellar-cargo",
+  "purrfect-whiskers",
   "mochi",
 ];
 
