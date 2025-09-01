@@ -40,6 +40,10 @@ export const ProjectPhotoAlbum = ({
           ) : null}
         </div>
       ),
+
+      image: (props, context) => {
+        return <img {...props} width={context.width} height={context.height} />;
+      },
     }}
   />
 );
