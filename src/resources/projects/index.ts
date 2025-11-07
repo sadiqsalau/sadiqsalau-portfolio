@@ -5,6 +5,8 @@ import type { Project, ProjectImage } from "../../types/project";
 export const FEATURED_PROJECTS_IDS = [
   "pluxscore",
   "purrfect-farmer",
+  "parcel",
+  "packer",
   "pwabucket",
   "safe",
   "kazeemtanimu",
