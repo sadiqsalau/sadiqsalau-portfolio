@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router";
 import { LuMail, LuPhone } from "react-icons/lu";
-import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiGithub, SiTelegram, SiWhatsapp, SiX } from "react-icons/si";
 
 import Button from "./Button";
 import HeroProfilePicture from "../assets/images/hero-profile-picture.png?w=384&h=384&format=webp";
@@ -34,19 +34,20 @@ const ContactLinkButton = ({
 
 const ContactLinks = () => (
   <div className="flex flex-wrap justify-center items-center gap-2 my-2">
+    <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
     <ContactLinkButton title="Email" href={contact.email} icon={LuMail} />
-    <ContactLinkButton
-      title="LinkedIn"
-      href={contact.linkedin}
-      icon={SiLinkedin}
-    />
     <ContactLinkButton
       title="WhatsApp"
       href={contact.whatsapp}
       icon={SiWhatsapp}
     />
+    <ContactLinkButton title="X" href={contact.x} icon={SiX} />
+    <ContactLinkButton
+      title="Telegram"
+      href={contact.telegram}
+      icon={SiTelegram}
+    />
     <ContactLinkButton title="Phone" href={contact.phone} icon={LuPhone} />
-    <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
   </div>
 );
 

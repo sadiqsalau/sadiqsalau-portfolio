@@ -1,4 +1,6 @@
 export default {
+  x: "https://x.com/_sadiqsalau",
+  telegram: "https://t.me/sadiqsalau",
   github: "https://github.com/sadiqsalau",
   twitter: "https://twitter.com/sadiqsalau",
   linkedin: "https://www.linkedin.com/in/thesadiqsalau/",
