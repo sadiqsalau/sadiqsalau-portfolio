@@ -2,14 +2,14 @@ import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
 export const project: Project = {
-  title: "AiEarn Tracker",
-  link: "https://ai-earn.pwabucket.com",
-  repo: "https://github.com/pwabucket/pwa-ai-earn",
-  metaTitle: "AiEarn Tracker – Investment Portfolio PWA",
+  title: "Tracker",
+  link: "https://tracker.pwabucket.com",
+  repo: "https://github.com/pwabucket/pwa-tracker",
+  metaTitle: "Tracker – Investment Portfolio PWA",
   metaDescription:
-    "AiEarn Tracker helps users monitor investments and returns in real time, with a clean PWA interface and offline support.",
+    "Tracker helps users monitor investments and returns in real time, with a clean PWA interface and offline support.",
   keywords: [
-    "AiEarn Tracker",
+    "Tracker",
     "Investment Tracker PWA",
     "Portfolio Tracker App",
     "Financial PWA",
@@ -20,9 +20,9 @@ export const project: Project = {
   overview: () => (
     <>
       <p>
-        I built <strong>AiEarn Tracker</strong> to help a friend who wanted to
-        monitor his investments but wasn't comfortable running scripts like I
-        do. So I made something visual — a simple, browser-based app.
+        I built <strong>Tracker</strong> to help a friend who wanted to monitor
+        his investments but wasn't comfortable running scripts like I do. So I
+        made something visual — a simple, browser-based app.
       </p>
 
       <p>
