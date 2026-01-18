@@ -71,7 +71,7 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-1 md:items-start">
           {/* Intro */}
           <h1 className="text-center font-fredoka-one leading-snug tracking-tight">
-            <span className="inline-block text-green-500 text-8xl">
+            <span className="inline-block text-green-300 text-8xl">
               Sadiq Salau
             </span>
           </h1>
