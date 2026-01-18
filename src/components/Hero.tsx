@@ -33,7 +33,6 @@ const ContactLinkButton = ({
 
 const ContactLinks = () => (
   <div className="flex flex-wrap justify-center items-center gap-2 my-2">
-    <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
     <ContactLinkButton title="Email" href={contact.email} icon={LuMail} />
     <ContactLinkButton
       title="WhatsApp"
@@ -47,6 +46,7 @@ const ContactLinks = () => (
       icon={SiTelegram}
     />
     <ContactLinkButton title="Phone" href={contact.phone} icon={LuPhone} />
+    <ContactLinkButton title="GitHub" href={contact.github} icon={SiGithub} />
   </div>
 );
 
@@ -95,7 +95,6 @@ export default function Hero() {
       <div className="flex flex-wrap justify-center gap-4">
         {/* Navigation Links */}
         <HeroLink to="/">Home</HeroLink>
-        <HeroLink to="/about">About</HeroLink>
         <HeroLink to="/projects">Projects</HeroLink>
         <HeroLink to="/contact">Contact</HeroLink>
       </div>
