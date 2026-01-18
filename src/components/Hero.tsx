@@ -70,10 +70,8 @@ export default function Hero() {
       <div className="flex items-center grow mx-auto max-w-7xl">
         <div className="flex flex-col items-center gap-1 md:items-start">
           {/* Intro */}
-          <h1 className="text-center font-fredoka-one leading-snug tracking-tight">
-            <span className="inline-block text-green-300 text-8xl">
-              Sadiq Salau
-            </span>
+          <h1 className="text-green-300 text-8xl text-center font-fredoka-one leading-tight">
+            Sadiq Salau
           </h1>
           {/* Tagline */}
           <p className="text-sm uppercase tracking-wide text-stone-300 max-md:text-center">
