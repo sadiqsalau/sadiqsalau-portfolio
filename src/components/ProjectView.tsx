@@ -10,7 +10,6 @@ import ProjectHeader from "./ProjectHeader";
 import useNavigateBack from "../hooks/useNavigateBack";
 import type { Project } from "../types/project";
 import { ProjectPhotoAlbum } from "./ProjectPhotoAlbum";
-import { cn } from "../lib/utils";
 
 interface ProjectViewProps {
   project: Project;
@@ -31,26 +30,8 @@ export default function ProjectView({ project }: ProjectViewProps) {
   };
 
   return (
-    <>
+    <div className="flex flex-col gap-4">
       <ProjectHeader project={project} />
-
-      {/* Overview */}
-      {project.overview ? (
-        <div
-          className={cn(
-            "p-4 rounded-xl",
-            "bg-stone-800 text-stone-200",
-            "whitespace-pre-line font-medium",
-            "flex flex-col gap-2"
-          )}
-        >
-          {typeof project.overview === "function" ? (
-            project.overview()
-          ) : (
-            <p>{project.overview}</p>
-          )}
-        </div>
-      ) : null}
 
       {/* Photos */}
       <ErrorBoundary
@@ -75,6 +56,6 @@ export default function ProjectView({ project }: ProjectViewProps) {
           fade: 0,
         }}
       />
-    </>
+    </div>
   );
 }

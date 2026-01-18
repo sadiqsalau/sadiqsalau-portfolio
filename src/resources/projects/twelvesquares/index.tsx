@@ -1,48 +1,19 @@
-import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
 export const project: Project = {
   title: "Twelvesquares",
   link: "https://twelvesquares.net",
   tags: ["Client Work", "React", "Laravel", "Web Development"],
-  description: "Corporate website for a tech and security services firm.",
+  description:
+    "Corporate website for a tech and security services firm in Africa.",
   metaTitle: "Twelvesquares - Tech & Security Services Website",
   metaDescription:
-    "Corporate website for Twelvesquares, a tech and security services firm in Africa. Built from scratch with React, Laravel, and TailwindCSS for performance and SEO.",
+    "Corporate website for Twelvesquares, built from scratch with React, Laravel, and TailwindCSS.",
   keywords: [
     "Twelvesquares",
-    "tech and security services website",
-    "corporate website development",
     "React Laravel TailwindCSS",
-    "client work web development",
-    "custom business website",
-    "SEO optimized company site",
+    "Corporate Website Development",
   ],
-
-  overview: () => (
-    <>
-      <p>
-        I've worked with{" "}
-        <HyperLink target="_blank" href="https://twelvesquares.net">
-          <strong>Twelvesquares</strong>
-        </HyperLink>{" "}
-        on a bunch of projects, so when it came time to build their own site, I
-        wanted it to stand out.
-      </p>
-
-      <p>
-        I used <strong>React, TailwindCSS and Laravel</strong> to build
-        everything from scratch — no themes, no shortcuts. The design you see on
-        the site was <strong>handcrafted by me</strong>, tailored to reflect
-        their brand and the work they do across tech and security in Africa.
-      </p>
-
-      <p>
-        It's responsive, fast, and optimized for SEO — but more than that, it's
-        clean, straight to the point, and does exactly what it needs to do.
-      </p>
-    </>
-  ),
 };
 
 export default project;

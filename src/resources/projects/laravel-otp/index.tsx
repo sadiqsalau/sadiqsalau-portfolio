@@ -1,4 +1,3 @@
-import HyperLink from "../../../components/HyperLink";
 import type { Project } from "../../../types/project";
 
 export const project: Project = {
@@ -7,7 +6,6 @@ export const project: Project = {
   repo: "https://github.com/sadiqsalau/laravel-otp",
   tags: ["PHP", "Laravel", "Composer", "Packagist"],
   description: "Clean Laravel package for sending and verifying OTP codes.",
-
   metaTitle: "Laravel OTP - Simple OTP Verification Package for Laravel",
   metaDescription:
     "Laravel OTP is a lightweight PHP package for sending and verifying one-time passwords in Laravel. Easy to integrate, flexible, and available on Packagist.",
@@ -20,31 +18,6 @@ export const project: Project = {
     "Sadiq Salau Laravel Package",
     "Laravel Packagist OTP",
   ],
-  overview: () => (
-    <>
-      <p>
-        <strong>Laravel OTP</strong> is a lightweight package I built for
-        Laravel apps that need one-time password functionality.
-      </p>
-
-      <p>
-        It uses class-based OTP definitions (like `UserRegistrationOtp`) so you
-        can hook into custom logic through a `process()` method once
-        verification succeeds.
-      </p>
-
-      <p>
-        I also wrote a quick walkthrough on{" "}
-        <HyperLink
-          href="https://medium.com/@sadiqsalau/sending-and-verifying-otp-codes-in-laravel-the-easy-way-b946946bf467"
-          target="_blank"
-        >
-          Medium
-        </HyperLink>{" "}
-        to show how it all ties together.
-      </p>
-    </>
-  ),
 };
 
 export default project;

@@ -11,7 +11,6 @@ export interface Project {
   link: string;
   metaTitle: string;
   metaDescription: string;
-  overview?: string | (() => JSX.Element);
   repo?: string;
   icon?: string;
   tags: string[];
