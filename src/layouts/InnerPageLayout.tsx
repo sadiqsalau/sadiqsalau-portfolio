@@ -12,7 +12,7 @@ const HeaderLink = (props: React.ComponentProps<typeof NavLink>) => (
         " uppercase",
         isActive
           ? "text-green-500 font-bold"
-          : "text-stone-300 hover:underline hover:text-green-400"
+          : "text-stone-300 hover:underline hover:text-green-400",
       )
     }
   />
@@ -26,7 +26,6 @@ export default function InnerPageLayout() {
           <div className="flex flex-wrap justify-center gap-4">
             {/* Navigation Links */}
             <HeaderLink to="/">Home</HeaderLink>
-            <HeaderLink to="/about">About</HeaderLink>
             <HeaderLink to="/projects">Projects</HeaderLink>
             <HeaderLink to="/contact">Contact</HeaderLink>
           </div>
