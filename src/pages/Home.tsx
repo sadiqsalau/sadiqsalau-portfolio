@@ -7,7 +7,7 @@ export default function Home() {
       <PageSEO
         title="Sadiq Salau - Web Applications Developer & Software Engineer"
         description="Explore the portfolio of Sadiq Salau, a software engineer in Abuja, Nigeria. Specializing in performance-driven PWAs, UX-focused design, and offline-first web applications."
-        images={["https://sadiqsalau.vercel.app/og.jpg"]}
+        images={["https://sadiqsalau.com/og.jpg"]}
         keywords={[
           "Sadiq Salau",
           "Software Engineer Abuja",
